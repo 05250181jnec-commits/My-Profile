@@ -6,100 +6,60 @@
 <title>Nima Yoezer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="top" id="top"><div class="wrap">
+<div class="top" id="top"><canvas id="net" aria-hidden="true"></canvas><div class="wrap">
   <nav aria-label="Main">
     <a class="who" href="#top">Nima Yoezer</a>
     <a href="#about">About</a><a href="#education">Education</a>
-    <a href="#skills">Skills</a><a href="#certificates">Certificates</a>
-    <a href="#contact">Contact</a>
+    <a href="#skills">Skills</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
     <button class="icon-btn" id="themeBtn" type="button">Dark mode</button>
   </nav>
   <div class="hero">
-    <div class="hero-image">
-        <img src="media/nima.jpeg" alt="Nima Yoezer">
-    </div>
     <div>
-      <h1>Nima Yoezer</h1>
-      <p class="role">Student Leader at JIgme Namgyel Engineering College</p>
-      <p class="lead">Gomphu, Zhemgang, Bhutan</p>
-      <div class="btns"><a class="btn primary" href="mailto:05250181.jnec@rub.edu.bt">Email me</a>
-      <a class="btn" href="#certificates">View certificates</a></div>
+      <p class="hi mono"></p> Hello, I am</p>
+      <h1>Nima <span>Yoezer</span></h1>
+      <p class="typed mono" id="typed" aria-label="Student Leader at Jigme Namgyel Engineering College">Student Leader at Jigme Namgyel Engineering College</p>
+      <p class="sub">Gomphu, Zhemgang, Bhutan</p>
+      <div class="btns"><a class="btn primary" href="mailto:05250181.jnec@rub.edu.bt">Email me</a><a class="btn" href="#certificates">View certificates</a></div>
     </div>
+    <div class="photo"><div class="frame"><b aria-hidden="true">NY</b><img src="media/nima.jpeg" alt="Nima Yoezer"></div></div>
   </div>
 </div></div>
 <main>
-  <section id="about"><div class="wrap"><h2>About Me</h2>
+  <section id="about"><div class="wrap reveal"><span class="label mono">01 / about</span>
+    <h2>About me</h2>
     <p class="about">I'm hard-working, dedicated and self-motivated, with strong organisation skills and the ability to develop and put in place new systems and procedures. I love meeting people, leading teams and exploring new places.</p>
   </div></section>
 
-  <section id="education" class="alt"><div class="wrap"><h2>Education</h2>
-    <div class="steps">
-      <div class="step"><div class="yr">2020</div>
-      <h3>Class X, Agriculture</h3><p>Yebilaptsa Central School, Zhemgang</p>
-      <p>Bhutan Certificate of Secondary Education</p><span class="score">80 (English+ Best Four subject)</span></div>
-      <div class="step"><div class="yr">2024</div><h3>Class XII, Commerce</h3><p>Desi High School, Thimphu</p>
-      <p>Bhutan Higher Secondary Education Certificate</p>
-      <span class="score">77.4% (English+ Best Three subjects)</span></div>
-    <div class="step"><div class="yr">2025-2027</div><h3>Department of Information Technology</h3>
-    <p>Jigme Namgyel Engineering College</p>
-    <p>Diploma in Computer System and Networking</p></div>
-    </div>
+  <section id="education" class="alt"><div class="wrap reveal"><span class="label mono">Education</span><h2>My journey</h2>
+    <ol class="tl">
+      <li><div class="yr mono">2020</div><h3>Class X, Agriculture</h3><p>Yebilaptsa Central School, Zhemgang</p><p>Bhutan Certificate of Secondary Education</p><span class="tag">80 (English + best four subjects)</span></li>
+      <li><div class="yr mono">2024</div><h3>Class XII, Commerce</h3><p>Desi High School, Thimphu</p><p>Bhutan Higher Secondary Education Certificate</p><span class="tag">77.4% (English + best three subjects)</span></li>
+      <li><div class="yr mono">2025 - 2027</div><h3>Diploma in Computer System and Networking</h3><p>Department of Information Technology, Jigme Namgyel Engineering College</p><span class="tag now">Currently studying</span></li>
+    </ol>
+  </div></section>
+
+  <section id="skills"><div class="wrap reveal"><span class="label mono">Skills</span><h2>What I bring</h2>
+    <div class="cards">
+      <div class="card"><span class="ic" aria-hidden="true">🤝</span><h3>Team building and leading</h3><p>Motivating teams, backed by a leadership certificate.</p></div>
+      <div class="card"><span class="ic" aria-hidden="true">💬</span><h3>Communicating with the public</h3><p>Clear, friendly and effective with people from all walks of life.</p></div>
+      <div class="card"><span class="ic" aria-hidden="true">🔥</span><h3>Hard work and dedication</h3><p>Reliable, self-motivated and committed to finishing what I start.</p></div>
     </div>
   </div></section>
 
-  <section id="skills"><div class="wrap"><h2>Skills</h2>
-    <div class="cols">
-      <div><h3>Team building and leading</h3>
-        <p>Motivating teams, backed by a leadership certificate.</p>
-      </div>
-      <div><h3>Communicating with the public</h3>
-        <p>Clear, friendly and effective with people from all walks of life.</p>
-      </div>
-      <div><h3>Hard work and dedication</h3>
-        <p>Reliable, self-motivated and committed to finishing what I start.</p></div>
-    </div>
+  <section id="certificates" class="alt"><div class="wrap"><span class="label mono">Certificates</span><h2>Proof of learning</h2>
+    <ul class="certs">
+      <li class="reveal"><button class="cert" type="button"><div class="thumb"><img src="media/linux_coursera085U9QFVKV1T.jpg" alt="Linux certificate"></div><div class="meta"><h3>Becoming a Linux Server Admin</h3><p>Coursera</p></div></button></li>
+      <li class="reveal"><button class="cert" type="button"><div class="thumb"><img src="media/python.jpg" alt="Python Tkinter certificate"></div><div class="meta"><h3>Python Tkinter: Design, Build and Integrate GUIs</h3><p>Coursera</p></div></button></li>
+      <li class="reveal"><button class="cert" type="button"><div class="thumb"><img src="media/Web-development.jpg" alt="Laravel certificate"></div><div class="meta"><h3>Master Full-Stack Web Development with Laravel and PHP</h3><p>Coursera</p></div></button></li>
+    </ul>
   </div></section>
 
-  <section id="certificates" class="alt"><div class="wrap"><h2>Certificates</h2>
-    <ul class="certs" id="certs">
-  <li class="cert">
-    <div class="thumb">
-      <img src="media/linux_coursera085U9QFVKV1T.jpg" alt="Linux Certificate">
-    </div>
-    <div class="meta">
-      <h3>Becoming a Linux Server Admin</h3>
-      <p>Coursera</p>
-    </div>
-  </li>
-
-  <li class="cert">
-    <div class="thumb">
-      <img src="media/python.jpg" alt="Python Tkinter Certificate">
-    </div>
-    <div class="meta">
-      <h3>Python Tkinter: Design, Build and Integrate GUIs</h3>
-      <p>Coursera</p>
-    </div>
-  </li>
-
-  <li class="cert">
-    <div class="thumb">
-      <img src="media/Web-development.jpg" alt="Laravel Certificate">
-    </div>
-    <div class="meta">
-      <h3>Master Full-Stack Web Development with Laravel and PHP</h3>
-      <p>Coursera</p>
-    </div>
-  </li>
-</ul>
-  </div></section>
-
-  <section id="languages"><div class="wrap two">
-    <div><h2>Languages</h2>
+  <section id="languages"><div class="wrap two reveal">
+    <div><span class="label mono">Languages</span><h2>Languages</h2>
       <div class="lang"><strong>English</strong>
         <div><em>Speaking</em><i style="--l:4" role="img" aria-label="Very good"></i>Very good</div>
         <div><em>Reading</em><i style="--l:4" role="img" aria-label="Very good"></i>Very good</div>
@@ -109,23 +69,24 @@
         <div><em>Reading</em><i style="--l:5" role="img" aria-label="Excellent"></i>Excellent</div>
         <div><em>Writing</em><i style="--l:4" role="img" aria-label="Very good"></i>Very good</div></div>
     </div>
-    <div><h2>Interests</h2>
-      <ul class="pills"><li>I have a strong interest in software development and enjoy building applications through coding. 
-        I am passionate about designing intuitive and user-friendly UI/UX experiences that enhance usability. 
-        I am also highly interested in network configuration and management, as well as system administration, 
-        where I enjoy configuring, maintaining, and troubleshooting IT infrastructure. Additionally, 
-        I enjoy exploring new technologies and continuously expanding my technical knowledge.</li></ul>
+    <div><span class="label mono">Interests</span><h2>What excites me</h2>
+      <div class="cards">
+        <div class="card"><span class="ic" aria-hidden="true">💻</span><h3>Software development</h3><p>Building applications through coding.</p></div>
+        <div class="card"><span class="ic" aria-hidden="true">🎨</span><h3>UI/UX design</h3><p>Intuitive, user-friendly experiences that make things easy to use.</p></div>
+        <div class="card"><span class="ic" aria-hidden="true">🌐</span><h3>Networks and systems</h3><p>Configuring, maintaining and troubleshooting IT infrastructure.</p></div>
+        <div class="card"><span class="ic" aria-hidden="true">🚀</span><h3>New technologies</h3><p>Always exploring and expanding my technical knowledge.</p></div>
       </div>
+    </div>
   </div></section>
 
-  <section id="contact" class="contact"><div class="wrap"><h2>Let's Connect</h2>
+  <section id="contact" class="contact"><div class="wrap reveal"><span class="label mono">ontact</span><h2>Let's connect</h2>
     <a class="big" href="mailto:05250181.jnec@rub.edu.bt">05250181.jnec@rub.edu.bt</a>
     <p><button class="icon-btn" id="copyBtn" type="button" data-email="05250181.jnec@rub.edu.bt">Copy email</button></p>
-    </h2>
   </div></section>
 </main>
 <footer><div class="wrap">© <span id="year">2026</span> Nima Yoezer · Bhutan</div></footer>
-<dialog id="dlg"><img id="dlgImg" alt=""><p id="dlgCap"></p><button class="icon-btn" id="dlgClose" type="button" style="color:var(--ink)">Close</button></dialog>
+<dialog id="dlg"><img id="dlgImg" alt=""><p id="dlgCap"></p>
+  <button class="icon-btn" id="dlgClose" type="button" style="color:var(--ink)">Close</button></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="script.js"></script>
 </body>
